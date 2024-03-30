@@ -280,21 +280,21 @@
 
   - My official AltStore repo: https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/arichornlover/arichornlover.github.io/main/apps.json
 
-  - [Open in AltStore (v19.09.4-3.0.3)](https://tinyurl.com/yc6ctbz9) - It will take a while to install because AltStore needs to download the IPA first.
+  - [Open in AltStore (v19.10.7-3.0.3)](https://tinyurl.com/2s4zrj2h) - It will take a while to install because AltStore needs to download the IPA first.
 
 <details>
-  <summary>Version information (last updated: Mar 7, 2024)</summary>
+  <summary>Version information (last updated: Mar 12, 2024)</summary>
 
 | **Tweaks/App** | **Developer** | **Version** | **Open source** |
 | - | - | :-: | :-:  |
-| **YouTube** | Google Inc | 19.09.4 | ✖︎ |
+| **YouTube** | Google Inc | 19.10.7 | ✖︎ |
 | [uYou](https://github.com/MiRO92/uYou-for-YouTube) | [MiRO92](https://twitter.com/miro92) | 3.0.3 | ✖︎ |
 | **Open in YouTube** | [CokePokes](https://github.com/CokePokes) | 1.2 | [✔︎](https://github.com/CokePokes/YoutubeExtensions) |
 | **iSponsorBlock** | [Galactic-Dev](https://github.com/Galactic-Dev) | 1.2.2 | [✔︎](https://github.com/Galactic-Dev/iSponsorBlock) |
 | **BigYTMiniPlayer** | [Galactic-Dev](https://github.com/Galactic-Dev) | 1.0-1 | [✔︎](https://github.com/Galactic-Dev/BigYTMiniPlayer) |
 | **YTNoHoverCards** | [level3tjg](https://twitter.com/level3tjg) | 0.0.3 | [✔︎](https://github.com/level3tjg/YTNoHoverCards) |
 | **YTMiniplayerEnabler** | [level3tjg](https://twitter.com/level3tjg) | 0.0.2 | [✔︎](https://github.com/level3tjg/YTMiniplayerEnabler) |
-| **DontEatMyContent** | [therealFoxster](https://github.com/therealFoxster) | 1.1.3 | [✔︎](https://github.com/therealFoxster/DontEatMyContent) |
+| **DontEatMyContent** | [therealFoxster](https://github.com/therealFoxster) | 1.1.5 | [✔︎](https://github.com/therealFoxster/DontEatMyContent) |
 | **YTSpeed** | [Lyvendia](https://github.com/Lyvendia) | 1.0.1 | [✔︎](https://github.com/Lyvendia/YTSpeed) |
 | **Alderis Color Picker** | [HASHBANG Productions](https://github.com/hbang) | 1.2 | [✔︎](https://github.com/hbang/Alderis) |
 | **YTUHD** | [PoomSmart](https://twitter.com/poomsmart) | 1.4.3 | [✔︎](https://github.com/PoomSmart/YTUHD) |

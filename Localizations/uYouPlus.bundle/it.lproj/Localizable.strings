@@ -1,18 +1,18 @@
 // About
-"ABOUT" = "About";
+"ABOUT" = "Riguardo";
 
 "VERSION" = "versione di uYouPlus: %@";
 "VERSION_CHECK" = "Clicca qui per cercare gli aggiornamenti!";
 
-"REPORT_AN_ISSUE" = "Report an issue";
-"ADD_TITLE" = "Add your title here...";
+"REPORT_AN_ISSUE" = "Reporta un problema";
+"ADD_TITLE" = "Aggiungi il tuo titolo qui...";
 
-"QUIT_YOUTUBE" = "Quit YouTube";
+"QUIT_YOUTUBE" = "Chiudi YouTube";
 
-"RESTART_YOUTUBE" = "Restart YouTube to apply changes";
+"RESTART_YOUTUBE" = "Riavvia YouTube per applicare le modifiche";
 
 // App appearance
-"APP_THEME" = "🎨 App appearance";
+"APP_THEME" = "🎨 Tema dell'app";
 "THEME_OPTIONS" = "Opzioni Tema";
 
 "DARK_THEME" = "Dark theme";
@@ -33,10 +33,10 @@
 // Video player options
 "VIDEO_PLAYER_OPTIONS" = "⏯️ Opzioni Video Player";
 
-"SLIDE_TO_SEEK" = "Enable Slide to seek";
-"SLIDE_TO_SEEK_DESC" = "Bring back the Slide to seek gesture.";
+"SLIDE_TO_SEEK" = "Attiva \"Scorri per cercare\"";
+"SLIDE_TO_SEEK_DESC" = "Riporta la gesture \"Scorri per cercare\".";
 
-"DISABLE_DOUBLE_TAP_TO_SEEK" = "Disable double tap to seek";
+"DISABLE_DOUBLE_TAP_TO_SEEK" = "Disabilita il doppio tocco per cercare";
 "DISABLE_DOUBLE_TAP_TO_SEEK_DESC" = "";
 
 "SNAP_TO_CHAPTER" = "Disabilita snap to chapter";
@@ -48,7 +48,7 @@
 "YT_MINIPLAYER" = "Abilita il Miniplayer su tutti i video di YouTube";
 "YT_MINIPLAYER_DESC" = "Video YouTube Kids per esempio.";
 
-"STOCK_VOLUME_HUD" = "Use iOS stock volume HUD";
+"STOCK_VOLUME_HUD" = "Usa l'HUD del volume stock di iOS";
 "STOCK_VOLUME_HUD_DESC" = "";
 
 // Video controls overlay options
@@ -57,14 +57,14 @@
 "HIDE_AUTOPLAY_SWITCH" = "Nascondi Interruttore Riproduzione Automatica";
 "HIDE_AUTOPLAY_SWITCH_DESC" = "Nasconde il controllo per la riproduzione automatica in sovrimpressione al video.";
 
-"HIDE_YTMUSIC_BUTTON" = "Hide Youtube Music button";
-"HIDE_YTMUSIC_BUTTON_DESC" = "Hides Youtube Music button that appears with Premium";
+"HIDE_YTMUSIC_BUTTON" = "Nascondi il pulsante di Youtube Music";
+"HIDE_YTMUSIC_BUTTON_DESC" = "Nasconde il pulsante di Youtube Music che appare con la sottoscrizione all'abbonamento Premium.";
 
 "HIDE_SUBTITLES_BUTTON" = "Nascondi Bottone Sottotitoli";
 "HIDE_SUBTITLES_BUTTON_DESC" = "Nasconde il controllo per i sottotitoli in sovrimpressione al video.";
 
 "HIDE_HUD_MESSAGES" = "Nascondi messaggi in sovrimpressione";
-"HIDE_HUD_MESSAGES_DESC" = "Esempio: Sottotitoli attivati/disattivati, Ripetizione video attiva,...";
+"HIDE_HUD_MESSAGES_DESC" = "Esempio: Sottotitoli attivati/disattivati, Ripetizione video attiva, ...";
 
 "HIDE_PAID_PROMOTION_CARDS" = "Nascondi i banner sponsorizzati";
 "HIDE_PAID_PROMOTION_CARDS_DESC" = "Nasconde il banner 'Include Promozioni a Pagamento' in alcuni video.";
@@ -90,10 +90,10 @@
 // Shorts controls overlay options
 "SHORTS_CONTROLS_OVERLAY_OPTIONS" = "💥 Opzioni Sovrimpressione (Overlay) Shorts";
 
-"HIDE_SUPER_THANKS" = "Nascondi 'Buy Super Thanks'";
-"HIDE_SUPER_THANKS_DESC" = "Nascondi il banner 'Buy Super Thanks' dagli Shorts.";
+"HIDE_SUPER_THANKS" = "Nascondi \"Buy Super Thanks\"";
+"HIDE_SUPER_THANKS_DESC" = "Nascondi il banner \"Buy Super Thanks\" dagli Shorts.";
 
-"HIDE_SUBCRIPTIONS" = "Hide subscriptions button";
+"HIDE_SUBCRIPTIONS" = "Nascondi il pulsante delle iscrizioni";
 "HIDE_SUBCRIPTIONS_DESC" = "";
 
 "DISABLE_RESUME_TO_SHORTS" = "Disabilita il resume dagli Shorts";
@@ -102,8 +102,8 @@
 // Miscellaneous
 "MISCELLANEOUS" = "🔎 Varie";
 
-"HIDE_UYOU" = "Hide uYou tab";
-"HIDE_ISPONSORBLOCK" = "Hide iSponsorBlock button";
+"HIDE_UYOU" = "Nascondi il tab di uYou";
+"HIDE_ISPONSORBLOCK" = "Nascondi il pulsante di iSponsorBlock";
 
 "CAST_CONFIRM" = "Avviso di conferma prima della condivisione su TV (YTCastConfirm)";
 "CAST_CONFIRM_DESC" = "Mostra un avviso di conferma prima della condivisione per evitar e di irrompere accidentalmente sulla TV.";
@@ -115,17 +115,17 @@
 "DISABLE_HINTS" = "Disabilita i suggerimenti";
 "DISABLE_HINTS_DESC" = "Disabilita i suggerimenti sulle funzionalità di YouTube che di solito vengono visualizzati quando l'app viene appena installata.";
 
-"ENABLE_YT_STARTUP_ANIMATION" = "Abilita YouTube startup animazione";
+"ENABLE_YT_STARTUP_ANIMATION" = "Abilita l'animazione di startup di YouTube";
 "ENABLE_YT_STARTUP_ANIMATION_DESC" = "";
 
 "HIDE_CHIP_BAR" = "Nascondi la barra superiore";
 "HIDE_CHIP_BAR_DESC" = "Nascondi la barra superiore nella Home (Tendenze, Musica, Giochi...) e Iscrizioni (Tutti i video, Continua a guardare...). È richiesto il riavvio dell'app.";
 
-"HIDE_PLAY_NEXT_IN_QUEUE" = "Hide \"Play next in queue\"";
+"HIDE_PLAY_NEXT_IN_QUEUE" = "Nascondi \"Riproduci come il prossimo in coda\"";
 "HIDE_PLAY_NEXT_IN_QUEUE_DESC" = "";
 
 "IPHONE_LAYOUT" = "iPhone Layout";
-"IPHONE_LAYOUT_DESC" = "Seleziona per usare il Layout Iphone. È richiesto il riavvio dell'app.";
+"IPHONE_LAYOUT_DESC" = "Seleziona per usare il layout iPhone. È richiesto il riavvio dell'app.";
 
 "NEW_MINIPLAYER_STYLE" = "Nuovo stile per la barra del miniplayer (BigYTMiniPlayer)";
 "NEW_MINIPLAYER_STYLE_DESC" = "È richiesto un riavvio dell'app.";

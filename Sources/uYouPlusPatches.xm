@@ -6,8 +6,8 @@
 %hook NSBundle
 - (NSDictionary *)infoDictionary {
     NSMutableDictionary *info = %orig.mutableCopy;
-    NSString *altBundleIdentifier = info[@"ALTBundleIdentifier"];
-    if (altBundleIdentifier) info[@"CFBundleIdentifier"] = altBundleIdentifier;
+    if ([self isEqual:NSBundle.mainBundle])
+        info[@"CFBundleIdentifier"] = @"com.google.ios.youtube";
     return info;
 }
 %end

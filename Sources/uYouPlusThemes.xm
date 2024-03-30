@@ -289,6 +289,18 @@ UIColor* raisedColor = [UIColor colorWithRed:0.035 green:0.035 blue:0.035 alpha:
 }
 %end
 
+%hook UIApplication
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+    if (@available(iOS 14.0, *)) {
+        NSArray<UIWindow *> *windows = application.windows;
+        if (windows.count > 0) {
+            windows[0].backgroundColor = [UIColor blackColor];
+        }
+    }
+    %orig;
+}
+%end
+
 // Others
 %hook _ASDisplayView
 - (void)layoutSubviews {
@@ -570,6 +582,18 @@ UIColor *customHexColor;
 %hook YTBackstageCreateRepostDetailView
 - (void)setBackgroundColor:(UIColor *)color {
     return IS_DARK_APPEARANCE_ENABLED ? %orig(customHexColor) : %orig;
+}
+%end
+
+%hook UIApplication
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+    if (@available(iOS 14.0, *)) {
+        NSArray<UIWindow *> *windows = application.windows;
+        if (windows.count > 0) {
+            windows[0].backgroundColor = customHexColor;
+        }
+    }
+    %orig;
 }
 %end
 
