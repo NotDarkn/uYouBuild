@@ -48,11 +48,20 @@
 "YT_MINIPLAYER" = "Miniplayer für alle YouTube-Videos aktivieren";
 "YT_MINIPLAYER_DESC" = "z.B. bei Videos für Kinder.";
 
+"HIDE_REMIX_BUTTON" = "Hides Remix button";
+"HIDE_REMIX_BUTTON_DESC" = "";
+
+"HIDE_CLIP_BUTTON" = "Hide Clip button";
+"HIDE_CLIP_BUTTON_DESC" = "";
+
+"HIDE_DOWNLOAD_BUTTON" = "Hide Download button";
+"HIDE_DOWNLOAD_BUTTON_DESC" = "";
+
 "STOCK_VOLUME_HUD" = "Standard iOS Lautstärke HUD aktivieren";
 "STOCK_VOLUME_HUD_DESC" = "";
 
 // Video controls overlay options
-"VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Video Controls Overlay Optionen";
+"VIDEO_PLAYER_OPTIONS" = "📹 Video Controls Overlay Optionen";
 
 "HIDE_AUTOPLAY_SWITCH" = "Autoplay-Schalter ausblenden";
 "HIDE_AUTOPLAY_SWITCH_DESC" = "Autoplay-Schalter vom Videoplayer ausblenden.";

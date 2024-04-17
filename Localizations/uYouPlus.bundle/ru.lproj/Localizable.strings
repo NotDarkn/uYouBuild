@@ -48,11 +48,20 @@
 "YT_MINIPLAYER" = "Мини-плеер для всех видео";
 "YT_MINIPLAYER_DESC" = "Принудительно активирует мини-плеер для всех видео, включая видео, предназначенное для детей.";
 
+"HIDE_REMIX_BUTTON" = "Hides Remix button";
+"HIDE_REMIX_BUTTON_DESC" = "";
+
+"HIDE_CLIP_BUTTON" = "Hide Clip button";
+"HIDE_CLIP_BUTTON_DESC" = "";
+
+"HIDE_DOWNLOAD_BUTTON" = "Hide Download button";
+"HIDE_DOWNLOAD_BUTTON_DESC" = "";
+
 "STOCK_VOLUME_HUD" = "Использовать стоковый слайдер грмкости iOS";
 "STOCK_VOLUME_HUD_DESC" = "";
 
 // Video controls overlay options
-"VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Параметры элементов оверлея видеоплеера";
+"VIDEO_PLAYER_OPTIONS" = "📹 Параметры элементов оверлея видеоплеера";
 
 "HIDE_AUTOPLAY_SWITCH" = "Скрыть «Автовоспроизведение»";
 "HIDE_AUTOPLAY_SWITCH_DESC" = "Убирает тумблер «Автовоспроизведение» с оверлея плеера.";

@@ -48,11 +48,20 @@
 "YT_MINIPLAYER" = "אפשר את הנגן הקטן עבור כל הסרטונים ב-YouTube";
 "YT_MINIPLAYER_DESC" = "סרטוני ילדים לדוגמה.";
 
+"HIDE_REMIX_BUTTON" = "Hides Remix button";
+"HIDE_REMIX_BUTTON_DESC" = "";
+
+"HIDE_CLIP_BUTTON" = "Hide Clip button";
+"HIDE_CLIP_BUTTON_DESC" = "";
+
+"HIDE_DOWNLOAD_BUTTON" = "Hide Download button";
+"HIDE_DOWNLOAD_BUTTON_DESC" = "";
+
 "STOCK_VOLUME_HUD" = "Use stock iOS volume HUD";
 "STOCK_VOLUME_HUD_DESC" = "";
 
 // Video controls overlay options
-"VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Video controls overlay options";
+"VIDEO_PLAYER_OPTIONS" = "📹 Video controls overlay options";
 
 "HIDE_AUTOPLAY_SWITCH" = "הסתר את כפתור ההפעלה האוטומטית";
 "HIDE_AUTOPLAY_SWITCH_DESC" = "הסתר את כפתור ההפעלה האוטומטית בתצוגת השליטה בסרטון.";

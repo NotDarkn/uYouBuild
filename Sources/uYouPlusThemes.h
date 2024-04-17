@@ -1,6 +1,6 @@
-#import "Tweaks/YouTubeHeader/YTCommonColorPalette.h"
-#import "Tweaks/YouTubeHeader/ASCollectionView.h"
-#import "Tweaks/YouTubeHeader/_ASDisplayView.h"
+#import <YouTubeHeader/YTCommonColorPalette.h>
+#import <YouTubeHeader/ASCollectionView.h>
+#import <YouTubeHeader/_ASDisplayView.h>
 #import "uYouPlus.h"
 
 // @interface YCHLiveChatView : UIView

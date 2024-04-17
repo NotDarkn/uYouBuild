@@ -26,17 +26,13 @@
 	path = Tweaks/YouTubeHeader
 	url = https://github.com/arichornlover/YouTubeHeader.git
 	branch = main
-[submodule "Tweaks/PSHeader"]
-	path = Tweaks/PSHeader
-	url = https://github.com/PoomSmart/PSHeader.git
-	branch = master
 [submodule "Extensions"]
 	path = Extensions
 	url = https://github.com/CokePokes/YoutubeExtensions.git
 	branch = main
 [submodule "Tweaks/YTABConfig"]
 	path = Tweaks/YTABConfig
-	url = https://github.com/arichornlover/YTABConfig.git
+	url = https://github.com/arichornlover/YTABConfig2.git
 	branch = main
 [submodule "Tweaks/Alderis"]
 	path = Tweaks/Alderis
@@ -56,7 +52,7 @@
 	url = https://github.com/PoomSmart/IAmYouTube.git
 [submodule "Tweaks/YTClassicVideoQuality"]
 	path = Tweaks/YTClassicVideoQuality
-	url = https://github.com/PoomSmart/YTClassicVideoQuality.git
+	url = https://github.com/arichornloverALT/YTClassicVideoQuality.git
 [submodule "Tweaks/NoYTPremium"]
 	path = Tweaks/NoYTPremium
 	url = https://github.com/PoomSmart/NoYTPremium.git
@@ -76,3 +72,6 @@
 [submodule "Tweaks/uYouLocalization"]
 	path = Tweaks/uYouLocalization
 	url = https://github.com/dayanch96/uYouLocalization.git
+[submodule "Tweaks/YouGroupSettings"]
+	path = Tweaks/YouGroupSettings
+	url = https://github.com/arichornlover/YouGroupSettings.git

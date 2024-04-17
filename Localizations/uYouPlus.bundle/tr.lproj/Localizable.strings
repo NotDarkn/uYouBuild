@@ -52,7 +52,7 @@
 "STOCK_VOLUME_HUD_DESC" = "";
  
 // Video controls overlay options
-"VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Video Kontrolleri Kaplaması Seçenekleri";
+"VIDEO_PLAYER_OPTIONS" = "📹 Video Kontrolleri Kaplaması Seçenekleri";
  
 "HIDE_AUTOPLAY_SWITCH" = "Otomatik oynatma anahtarını gizle";
 "HIDE_AUTOPLAY_SWITCH_DESC" = "Otomatik oynatma anahtarını video kontrolleri katmanından gizler.";

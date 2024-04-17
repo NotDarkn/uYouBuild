@@ -48,11 +48,20 @@
 "YT_MINIPLAYER" = "السماح بالمشغل المصغّر لكل فيديوهات يوتيوب";
 "YT_MINIPLAYER_DESC" = "عند تصغير فيديوهات الأطفال مثلاً (قبل إغلاق المقطع).";
 
+"HIDE_REMIX_BUTTON" = "Hides Remix button";
+"HIDE_REMIX_BUTTON_DESC" = "";
+
+"HIDE_CLIP_BUTTON" = "Hide Clip button";
+"HIDE_CLIP_BUTTON_DESC" = "";
+
+"HIDE_DOWNLOAD_BUTTON" = "Hide Download button";
+"HIDE_DOWNLOAD_BUTTON_DESC" = "";
+
 "STOCK_VOLUME_HUD" = "استخدام مؤشر تغيير الصوت الخاص بالنظام";
 "STOCK_VOLUME_HUD_DESC" = "إظهار مؤشر تغيير الصوت الرسمي الخاص بـ iOS بدلاً من مؤشر يوتيوب";
 
 // Video controls overlay options
-"VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 أزرار التحكم على الطبقة فوق الفيديو";
+"VIDEO_PLAYER_OPTIONS" = "📹 أزرار التحكم على الطبقة فوق الفيديو";
 
 "HIDE_AUTOPLAY_SWITCH" = "إخفاء زر التشغيل التلقائي";
 "HIDE_AUTOPLAY_SWITCH_DESC" = "إخفاء زر التشغيل التلقائي من أزرار التحكم على الفيديو.";

@@ -21,7 +21,7 @@
 "DEFAULT_THEME_DESC" = "";
 
 "OLD_DARK_THEME" = "明るいグレー";
-"OLD_DARK_THEME_DESC" = "YouTubeの古いダークテーマ";
+"OLD_DARK_THEME_DESC" = "以前のダークテーマ";
 
 "OLED_DARK_THEME" = "OLED (実験的)";
 "OLED_DARK_THEME_2" = "OLED";
@@ -31,28 +31,37 @@
 "OLED_KEYBOARD_DESC" = "";
 
 // Video controls overlay options
-"VIDEO_CONTROLS_OVERLAY_OPTIONS" = "⏯️ 動画コントロールのオーバーレイ設定";
+"VIDEO_PLAYER_OPTIONS" = "⏯️ 動画コントロールのオーバーレイ設定";
 
 "SLIDE_TO_SEEK" = "スライドシークを有効化";
-"SLIDE_TO_SEEK_DESC" = "スライドシークジェスチャーを復活させます。";
+"SLIDE_TO_SEEK_DESC" = "スライドシークジェスチャーを有効にします。";
 
-"DISABLE_DOUBLE_TAP_TO_SEEK" = "ダブルタップによるシークを無効化";
+"DISABLE_DOUBLE_TAP_TO_SEEK" = "ダブルタップシークを無効化";
 "DISABLE_DOUBLE_TAP_TO_SEEK_DESC" = "";
 
-"SNAP_TO_CHAPTER" = "チャプターに合わせてのスクラブを無効にする";
-"SNAP_TO_CHAPTER_DESC" = "動画を飛ばす際にチャプターに沿ってスクラブされるのを無効化します。";
+"SNAP_TO_CHAPTER" = "チャプターに合わせてのスクラブを無効化";
+"SNAP_TO_CHAPTER_DESC" = "動画を飛ばす際にチャプターに沿ってスクラブされるのを無効にします。";
 
-"PINCH_TO_ZOOM" = "ピンチで拡大を無効にする";
+"PINCH_TO_ZOOM" = "ピンチで拡大を無効化";
 "PINCH_TO_ZOOM_DESC" = "";
 
 "YT_MINIPLAYER" = "すべての動画でミニプレーヤーを有効にする";
 "YT_MINIPLAYER_DESC" = "ミニプレーヤーが使えない動画(子ども向けの動画など)がありますが、このオプションでバイパスできます。";
 
-"STOCK_VOLUME_HUD" = "iOSのstockボリュームHUDを利用する";
+"HIDE_REMIX_BUTTON" = "リミックスボタンを非表示";
+"HIDE_REMIX_BUTTON_DESC" = "";
+
+"HIDE_CLIP_BUTTON" = "クリップボタンを非表示";
+"HIDE_CLIP_BUTTON_DESC" = "";
+
+"HIDE_DOWNLOAD_BUTTON" = "オフラインボタンを非表示";
+"HIDE_DOWNLOAD_BUTTON_DESC" = "";
+
+"STOCK_VOLUME_HUD" = "標準の音量HUDを利用する";
 "STOCK_VOLUME_HUD_DESC" = "";
 
 // Video controls overlay options
-"VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 動画コントロールのオーバーレイ設定";
+"VIDEO_PLAYER_OPTIONS" = "📹 動画コントロールのオーバーレイ設定";
 
 "HIDE_AUTOPLAY_SWITCH" = "自動再生ボタンを非表示";
 "HIDE_AUTOPLAY_SWITCH_DESC" = "";
@@ -84,8 +93,8 @@
 "HIDE_HOVER_CARD" = "YTNoHoverCards";
 "HIDE_HOVER_CARD_DESC" = "動画のエンドスクリーンを非表示にします。";
 
-"HIDE_RIGHT_PANEL" = "フルスクリーン時のエンゲージパネルを非表示";
-"HIDE_RIGHT_PANEL_DESC" = "ランドスケープ時の右パネル(コメントなど)を非表示にします。";
+"HIDE_RIGHT_PANEL" = "フルスクリーン時の右側パネルを非表示";
+"HIDE_RIGHT_PANEL_DESC" = "横向きの時、右パネル(チャットなど)を非表示にします。";
 
 // Shorts controls overlay options
 "SHORTS_CONTROLS_OVERLAY_OPTIONS" = "💥 ショート動画のオーバーレイ設定";
@@ -96,21 +105,21 @@
 "HIDE_SUBCRIPTIONS" = "チャンネル登録ボタンを非表示";
 "HIDE_SUBCRIPTIONS_DESC" = "";
 
-"DISABLE_RESUME_TO_SHORTS" = "ショートの再開を無効化";
+"DISABLE_RESUME_TO_SHORTS" = "ショート動画からの再開を無効化";
 "DISABLE_RESUME_TO_SHORTS_DESC" = "ショート動画を視聴中にアプリを終了し、再度開いた際にショートから再開されるのを防ぎます。";
 
 // Miscellaneous
 "MISCELLANEOUS" = "🔎 その他";
 
-"HIDE_UYOU" = "Hide uYou tab";
-"HIDE_ISPONSORBLOCK" = "Hide iSponsorBlock button";
+"HIDE_UYOU" = "uYouタブを非表示";
+"HIDE_ISPONSORBLOCK" = "iSponsorBlockボタンを非表示";
 
 "CAST_CONFIRM" = "YTCastConfirm";
 "CAST_CONFIRM_DESC" = "キャスト前に確認の警告を表示します。";
 "CASTING" = "キャスト";
 "MSG_ARE_YOU_SURE" = "本当にキャストを開始しますか？";
 "MSG_YES" = "はい";
-"MSG_CANCEL" = "キャンセル";
+"MSG_CANCEL" = "いいえ";
 
 "DISABLE_HINTS" = "ヒントを非表示";
 "DISABLE_HINTS_DESC" = "アプリ初回起動時に表示されるYouTubeのヒントを非表示にします。";
@@ -119,7 +128,7 @@
 "ENABLE_YT_STARTUP_ANIMATION_DESC" = "";
 
 "HIDE_CHIP_BAR" = "トップバーを非表示";
-"HIDE_CHIP_BAR_DESC" = "ホーム(トレンド,音楽,ゲーム...)とサブスクリプション(すべてのビデオ、視聴を続ける...)リボンのトップバーを非表示にします。";
+"HIDE_CHIP_BAR_DESC" = "ホームと登録チャンネルのトップバー(すべて,音楽,ゲーム,続きを見る など)を非表示にします。";
 
 "HIDE_PLAY_NEXT_IN_QUEUE" = "「キューの最初に追加」を非表示";
 "HIDE_PLAY_NEXT_IN_QUEUE_DESC" = "";

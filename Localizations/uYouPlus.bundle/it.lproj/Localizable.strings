@@ -48,11 +48,20 @@
 "YT_MINIPLAYER" = "Abilita il Miniplayer su tutti i video di YouTube";
 "YT_MINIPLAYER_DESC" = "Video YouTube Kids per esempio.";
 
+"HIDE_REMIX_BUTTON" = "Hides Remix button";
+"HIDE_REMIX_BUTTON_DESC" = "";
+
+"HIDE_CLIP_BUTTON" = "Hide Clip button";
+"HIDE_CLIP_BUTTON_DESC" = "";
+
+"HIDE_DOWNLOAD_BUTTON" = "Hide Download button";
+"HIDE_DOWNLOAD_BUTTON_DESC" = "";
+
 "STOCK_VOLUME_HUD" = "Usa l'HUD del volume stock di iOS";
 "STOCK_VOLUME_HUD_DESC" = "";
 
 // Video controls overlay options
-"VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Opzioni Sovrimpressione (Overlay) Video";
+"VIDEO_PLAYER_OPTIONS" = "📹 Opzioni Sovrimpressione (Overlay) Video";
 
 "HIDE_AUTOPLAY_SWITCH" = "Nascondi Interruttore Riproduzione Automatica";
 "HIDE_AUTOPLAY_SWITCH_DESC" = "Nasconde il controllo per la riproduzione automatica in sovrimpressione al video.";

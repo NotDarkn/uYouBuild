@@ -13,7 +13,7 @@ static BOOL customContrastMode() {
 
 UIColor *lcmHexColor;
 
-%group gLowContrastMode // Low Contrast Mode v1.5.1 (Compatible with only YouTube v17.33.2-v17.38.10)
+%group gLowContrastMode // Low Contrast Mode v1.5.2 (Compatible with only YouTube v17.33.2-v17.38.10)
 %hook UIColor
 + (UIColor *)whiteColor { // Dark Theme Color
          return [UIColor colorWithRed: 0.56 green: 0.56 blue: 0.56 alpha: 1.00];
@@ -295,6 +295,11 @@ UIColor *lcmHexColor;
    %orig([UIColor whiteColor]);
 }
 %end
+%hook UIControl // snackbar fix for lcm
+- (UIColor *)backgroundColor {
+    return [UIColor blackColor];
+}
+%end
 %end
 
 %group gCustomContrastMode // Custom Contrast Mode (Hex Color)
@@ -569,6 +574,11 @@ UIColor *lcmHexColor;
 %hook ASButtonNode
 - (void)setTextColor:(UIColor *)textColor {
    %orig([UIColor whiteColor]);
+}
+%end
+%hook UIControl // snackbar fix for lcm
+- (UIColor *)backgroundColor {
+    return [UIColor blackColor];
 }
 %end
 %end

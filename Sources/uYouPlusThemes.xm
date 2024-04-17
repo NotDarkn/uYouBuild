@@ -163,22 +163,20 @@ UIColor* raisedColor = [UIColor colorWithRed:0.035 green:0.035 blue:0.035 alpha:
 }
 %end
 
-// Your videos
+// Download sort
+%hook GOODialogView
+- (void)setBackgroundColor:(UIColor *)color {
+    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor blackColor]) : %orig;
+}
+%end
+
+// Playlist sort
 %hook ASCollectionView
 - (void)didMoveToWindow {
     %orig;
     if (IS_DARK_APPEARANCE_ENABLED && [self.nextResponder isKindOfClass:%c(_ASDisplayView)]) {
         self.superview.backgroundColor = [UIColor blackColor];
-    }
-}
-%end
-
-// Sub menu?
-%hook ELMView
-- (void)didMoveToWindow {
-    %orig;
-    if (IS_DARK_APPEARANCE_ENABLED) {
-        // self.subviews[0].backgroundColor = [UIColor clearColor];
+        self.backgroundColor = [UIColor clearColor];
     }
 }
 %end
@@ -199,93 +197,6 @@ UIColor* raisedColor = [UIColor colorWithRed:0.035 green:0.035 blue:0.035 alpha:
         %orig;
         self.view.backgroundColor = [UIColor blackColor];
     } else { return %orig; }
-}
-%end
-
-// Search view
-%hook YTSearchBarView 
-- (void)setBackgroundColor:(UIColor *)color {
-    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor blackColor]) : %orig;
-}
-%end
-
-// History search view
-%hook YTSearchBoxView 
-- (void)setBackgroundColor:(UIColor *)color {
-    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor blackColor]) : %orig;
-
-}
-%end
-
-// Comment view
-%hook YTCommentView
-- (void)setBackgroundColor:(UIColor *)color {
-    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor blackColor]) : %orig;
-}
-%end
-
-%hook YTCreateCommentAccessoryView
-- (void)setBackgroundColor:(UIColor *)color {
-    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor blackColor]) : %orig;
-}
-%end
-
-%hook YTCreateCommentTextView
-- (void)setBackgroundColor:(UIColor *)color {
-    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor blackColor]) : %orig;
-}
-- (void)setTextColor:(UIColor *)color { // fix black text in #Shorts video's comment
-    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor whiteColor]) : %orig;
-}
-%end
-
-%hook YTCommentDetailHeaderCell
-- (void)didMoveToWindow {
-    %orig;
-    if (IS_DARK_APPEARANCE_ENABLED) {
-        // self.subviews[2].backgroundColor = [UIColor blackColor];
-    }
-}
-%end
-
-%hook YTFormattedStringLabel  // YT is werid...
-- (void)setBackgroundColor:(UIColor *)color {
-    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor clearColor]) : %orig;
-}
-%end
-
-// Live chat comment
-%hook YCHLiveChatActionPanelView 
-- (void)setBackgroundColor:(UIColor *)color {
-    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor blackColor]) : %orig;
-}
-%end
-
-%hook YTEmojiTextView
-- (void)setBackgroundColor:(UIColor *)color {
-    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor blackColor]) : %orig;
-}
-%end
-
-%hook YCHLiveChatView
-- (void)didMoveToWindow {
-    %orig;
-    if (IS_DARK_APPEARANCE_ENABLED) {
-        // self.subviews[1].backgroundColor = [UIColor blackColor];
-    }
-}
-%end
-
-%hook YTCollectionView 
-- (void)setBackgroundColor:(UIColor *)color { 
-    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor blackColor]) : %orig;
-}
-%end
-
-//
-%hook YTBackstageCreateRepostDetailView
-- (void)setBackgroundColor:(UIColor *)color {
-    return IS_DARK_APPEARANCE_ENABLED ? %orig([UIColor blackColor]) : %orig;
 }
 %end
 
@@ -327,24 +238,46 @@ UIColor* raisedColor = [UIColor colorWithRed:0.035 green:0.035 blue:0.035 alpha:
 - (void)didMoveToWindow {
     %orig;
     if (IS_DARK_APPEARANCE_ENABLED) {
-        if ([self.nextResponder isKindOfClass:%c(ASScrollView)]) { self.backgroundColor = [UIColor clearColor]; }
+        //
+        UIResponder *responder = self.nextResponder;
+        UIViewController *closestViewController = nil;
+
+        while (responder != nil) {
+            if ([responder isKindOfClass:[UIViewController class]]) {
+                closestViewController = (UIViewController *)responder;
+                break;
+            }
+            responder = responder.nextResponder;
+        }
+
+        if ([NSStringFromClass([closestViewController class]) isEqualToString:@"YTActionSheetDialogViewController"] && 
+            (([NSStringFromClass([self.superview class]) isEqualToString:@"YTELMView"]) || 
+            [NSStringFromClass([self.superview class]) isEqualToString:@"_ASDisplayView"] || 
+            [NSStringFromClass([self.superview class]) isEqualToString:@"ELMView"])) {
+
+            self.backgroundColor = [UIColor clearColor];
+        }
+
+        // Save video bottom
+        if ([NSStringFromClass([closestViewController class]) isEqualToString:@"YTBottomSheetController"]) { self.backgroundColor = [UIColor clearColor]; } 
+
+        //  Subcriptions header
+        if ([NSStringFromClass([closestViewController class]) isEqualToString:@"YTMySubsFilterHeaderViewController"] && 
+            ([NSStringFromClass([self.superview class]) isEqualToString:@"YTELMView"])) { 
+            self.backgroundColor = [UIColor clearColor]; 
+        }
         if ([self.accessibilityIdentifier isEqualToString:@"brand_promo.view"]) { self.backgroundColor = [UIColor blackColor]; }
-        if ([self.accessibilityIdentifier isEqualToString:@"eml.cvr"]) { self.backgroundColor = [UIColor blackColor]; }
         if ([self.accessibilityIdentifier isEqualToString:@"eml.topic_channel_details"]) { self.backgroundColor = [UIColor blackColor]; }
         if ([self.accessibilityIdentifier isEqualToString:@"eml.live_chat_text_message"]) { self.backgroundColor = [UIColor blackColor]; }
-        if ([self.accessibilityIdentifier isEqualToString:@"rich_header"]) { self.backgroundColor = [UIColor blackColor]; }
         if ([self.accessibilityIdentifier isEqualToString:@"id.ui.comment_cell"]) { self.backgroundColor = [UIColor blackColor]; }
         if ([self.accessibilityIdentifier isEqualToString:@"id.ui.comment_thread"]) { self.backgroundColor = [UIColor blackColor]; }
-        if ([self.accessibilityIdentifier isEqualToString:@"id.ui.cancel.button"]) { self.superview.backgroundColor = [UIColor clearColor]; }
         if ([self.accessibilityIdentifier isEqualToString:@"id.elements.components.comment_composer"]) { self.backgroundColor = [UIColor blackColor]; }
         if ([self.accessibilityIdentifier isEqualToString:@"id.elements.components.filter_chip_bar"]) { self.backgroundColor = [UIColor blackColor]; }
         if ([self.accessibilityIdentifier isEqualToString:@"id.elements.components.video_list_entry"]) { self.backgroundColor = [UIColor blackColor]; }
         if ([self.accessibilityIdentifier isEqualToString:@"id.comment.guidelines_text"]) { self.superview.backgroundColor = [UIColor blackColor]; }
         if ([self.accessibilityIdentifier isEqualToString:@"id.comment.timed_comments_welcome"]) { self.superview.backgroundColor = self.backgroundColor = [UIColor blackColor]; }
-        if ([self.accessibilityIdentifier isEqualToString:@"id.comment.channel_guidelines_bottom_sheet_container"]) { self.backgroundColor = [UIColor blackColor]; }
         if ([self.accessibilityIdentifier isEqualToString:@"id.comment.channel_guidelines_entry_banner_container"]) { self.superview.backgroundColor = self.backgroundColor = [UIColor blackColor]; }
         if ([self.accessibilityIdentifier isEqualToString:@"id.comment.comment_group_detail_container"]) { self.backgroundColor = [UIColor clearColor]; }
-        if ([self.accessibilityIdentifier hasPrefix:@"id.elements.components.overflow_menu_item_"]) { self.backgroundColor = [UIColor clearColor]; }
     }
 }
 %end
@@ -367,7 +300,6 @@ UIColor* raisedColor = [UIColor colorWithRed:0.035 green:0.035 blue:0.035 alpha:
     %orig;
     if (IS_DARK_APPEARANCE_ENABLED) {
         self.backgroundColor = raisedColor;
-        // self.subviews[1].backgroundColor = raisedColor;
         self.superview.backgroundColor = raisedColor;
     }
 }
@@ -678,7 +610,13 @@ UIColor *customHexColor;
 
 # pragma mark - OLED keyboard by @ichitaso <3 - http://gist.github.com/ichitaso/935100fd53a26f18a9060f7195a1be0e
 
-%group gOLEDKB 
+%group gOLEDKB
+%hook TUIEmojiSearchView
+- (void)didMoveToWindow {
+    %orig;
+    self.backgroundColor = [UIColor blackColor];
+}
+%end
 %hook UIPredictionViewController
 - (void)loadView {
     %orig;

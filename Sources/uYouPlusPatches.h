@@ -1,5 +1,5 @@
-#import "../Tweaks/YouTubeHeader/YTColorPalette.h"
-#import "../Tweaks/YouTubeHeader/YTCommonColorPalette.h"
+#import <YouTubeHeader/YTColorPalette.h>
+#import <YouTubeHeader/YTCommonColorPalette.h>
 #import "uYouPlus.h"
 
 @interface PlayerManager : NSObject
