@@ -1,3 +1,9 @@
+# How to fix the "remote: Repository not found." Error (buildapp.yml) ⚠️
+In order to simply fix this problem go to **Actions** and then go to **Update Submodules** and right as soon as you get there then trigger the **Run Workflow**
+
+Also please know that I can't trigger actions when my account is flagged so I can't update them on uYouEnhanced myself.
+
+# uYouEnhanced
 <p align="center">
   <a href="https://user-images.githubusercontent.com/78001398/271790092-006e81cc-715a-4fbc-aff6-15832e2da8c4.png">
     <img src="https://user-images.githubusercontent.com/78001398/271790092-006e81cc-715a-4fbc-aff6-15832e2da8c4.png" alt="UYOUPLUS_LOGO" width="200" height="200">
@@ -287,7 +293,9 @@
 - **Compatibility:** Requires iOS/iPadOS 15.0 or later.
 - For AltStore user: 
 
-  - My official AltStore repo: https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/arichornlover/arichornlover.github.io/main/apps.json
+  - My official AltStore repo (uYouEnhanced - iOS 15+): https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/arichornloverALT/arichornloverALT.github.io/main/apps.json
+
+  - My alternative AltStore repo (uYouEnhanced - iOS 14+ - mainly for Trollstore users): https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/arichornloverALT/arichornloverALT.github.io/main/apps-legacy.json - not sure if i can update this ipa. this IPA will be locked in YouTube Version **19.20.2**
 
   - [Open in AltStore (v19.21.2-3.0.4)](https://tinyurl.com/2wea84xd) - It will take a while to install because AltStore needs to download the IPA first.
 
